@@ -1,0 +1,16 @@
+{
+  "dependencyDashboard": true,
+  "extends": ["config:base", ":label(renovate)"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    }
+  ],
+  "schedule": "every saturday"
+}
