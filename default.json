@@ -11,6 +11,5 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
     }
-  ],
-  "schedule": "every saturday"
+  ]
 }
