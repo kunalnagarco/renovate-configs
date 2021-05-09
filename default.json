@@ -11,5 +11,6 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
     }
-  ]
+  ],
+  "timezone": "America/Toronto"
 }
