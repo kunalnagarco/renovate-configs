@@ -1,0 +1,1 @@
+This repository contains [Renovate configurations](https://docs.renovatebot.com/configuration-options/) for updating dependencies in my projects.
