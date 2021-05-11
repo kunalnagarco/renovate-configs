@@ -7,7 +7,6 @@
       "automerge": true
     }
   ],
-  "timezone": "America/Toronto",
   "vulnerabilityAlerts": {
     "labels": ["CVE"]
   }
