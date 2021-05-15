@@ -1,6 +1,6 @@
 {
   "dependencyDashboard": true,
-  "extends": ["config:base", ":label(renovate)"],
+  "extends": ["config:base", ":label(renovate)", ":enableVulnerabilityAlertsWithLabel(CVE)"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
