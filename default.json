@@ -6,13 +6,6 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automergeType": "branch",
       "automerge": true
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "enabled": false
     }
-  ],
-  "vulnerabilityAlerts": {
-    "labels": ["CVE"]
-  }
+  ]
 }
