@@ -1,15 +1,28 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default preset for use with my projects",
   "dependencyDashboard": true,
-  "extends": ["config:base", ":label(renovate)", ":enableVulnerabilityAlertsWithLabel(CVE)"],
+  "extends": [
+    "config:base",
+    ":maintainLockFilesWeekly",
+    ":rebaseStalePrs",
+    ":label(renovate)",
+    ":enableVulnerabilityAlertsWithLabel(CVE)"
+  ],
+  "automergeType": "branch",
+  "prCreation": "not-pending",
+  "rebaseWhen": "behind-base-branch",
+  "internalChecksFilter": "strict",
   "packageRules": [
     {
+      "description": "Automerge non-major updates",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automergeType": "branch",
       "automerge": true
     },
     {
+      "description": "Require dashboard approval for major updates",
       "matchUpdateTypes": ["major"],
-      "enabled": false
+      "dependencyDashboardApproval": true
     }
   ],
   "schedule": ["at 9am every Saturday"],
