@@ -2,8 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Default preset for use with my projects",
   "dependencyDashboard": true,
+  "timezone": "America/Toronto",
   "extends": [
     "config:base",
+    "schedule:weekends",
     ":maintainLockFilesWeekly",
     ":rebaseStalePrs",
     ":label(renovate)",
@@ -24,7 +26,5 @@
       "matchUpdateTypes": ["major"],
       "dependencyDashboardApproval": true
     }
-  ],
-  "schedule": ["9am every Saturday"],
-  "timezone": "America/Toronto"
+  ]
 }
