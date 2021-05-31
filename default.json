@@ -25,6 +25,6 @@
       "dependencyDashboardApproval": true
     }
   ],
-  "schedule": ["at 9am every Saturday"],
+  "schedule": ["9am every Saturday"],
   "timezone": "America/Toronto"
 }
