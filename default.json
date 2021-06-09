@@ -15,6 +15,7 @@
   "prCreation": "not-pending",
   "rebaseWhen": "behind-base-branch",
   "internalChecksFilter": "strict",
+  "transitiveRemediation": true,
   "packageRules": [
     {
       "description": "Automerge non-major updates",
