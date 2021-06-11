@@ -5,7 +5,6 @@
   "timezone": "America/Toronto",
   "extends": [
     "config:base",
-    "schedule:weekends",
     ":maintainLockFilesWeekly",
     ":rebaseStalePrs",
     ":label(renovate)",
