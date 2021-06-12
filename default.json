@@ -4,16 +4,16 @@
   "dependencyDashboard": true,
   "extends": [
     "config:base",
-    ":maintainLockFilesWeekly",
-    ":rebaseStalePrs",
     ":label(renovate)",
+    ":rebaseStalePrs",
     ":enableVulnerabilityAlertsWithLabel(CVE)"
   ],
   "automergeType": "branch",
-  "prCreation": "not-pending",
   "rebaseWhen": "behind-base-branch",
-  "internalChecksFilter": "strict",
   "transitiveRemediation": true,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "description": "Automerge non-major updates",
