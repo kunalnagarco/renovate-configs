@@ -2,6 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Default preset for use with my projects",
   "dependencyDashboard": true,
+  "schedule": [
+    "every weekend"
+  ],
   "extends": [
     "config:base",
     ":label(renovate)",
