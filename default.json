@@ -11,13 +11,15 @@
   "transitiveRemediation": true,
   "lockFileMaintenance": {
     "enabled": true,
-    "automerge": true
+    "automerge": true,
+    "automergeType": "branch"
   },
   "packageRules": [
     {
       "depTypeList": ["devDependencies"],
       "updateTypes": ["minor", "patch"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
     }
   ]
 }
