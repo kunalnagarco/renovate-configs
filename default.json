@@ -10,7 +10,8 @@
   ],
   "transitiveRemediation": true,
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "automerge": true
   },
   "packageRules": [
     {
