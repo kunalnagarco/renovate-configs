@@ -1,13 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Default preset for use with my projects",
+  "description": "Default Renovate Preset to use with most repositories",
   "dependencyDashboard": true,
   "extends": [
     "config:base",
     ":label(renovate)",
-    "schedule:monthly",
     ":enableVulnerabilityAlertsWithLabel(CVE)"
   ],
+  "schedule": ["at any time"],
+  "automergeSchedule": ["at any time"],
   "transitiveRemediation": true,
   "lockFileMaintenance": {
     "enabled": true,
