@@ -7,8 +7,6 @@
     ":label(renovate)",
     ":enableVulnerabilityAlertsWithLabel(CVE)"
   ],
-  "schedule": ["at any time"],
-  "automergeSchedule": ["at any time"],
   "transitiveRemediation": true,
   "lockFileMaintenance": {
     "enabled": true,
