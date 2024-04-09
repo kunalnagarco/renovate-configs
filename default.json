@@ -5,9 +5,12 @@
   "extends": [
     "config:base",
     ":label(renovate)",
+    "schedule:monthly",
+    "schedule:automergeMonthly",
     ":enableVulnerabilityAlertsWithLabel(CVE)"
   ],
   "transitiveRemediation": true,
+  "timezone": "America/Toronto",
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
